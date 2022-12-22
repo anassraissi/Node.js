@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "util": "^0.12.5",
+    "util.inherits": "^1.0.3"
+  }
+}
