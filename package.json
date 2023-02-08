@@ -3,5 +3,28 @@
     "express": "^4.18.2",
     "util": "^0.12.5",
     "util.inherits": "^1.0.3"
-  }
+  },
+  "name": "node_js",
+  "description": "this is a little test of node js app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anassraissi/node.js.git"
+  },
+  "keywords": [
+    "hi",
+    "anass",
+    "enjoy",
+    "bro"
+  ],
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anassraissi/node.js/issues"
+  },
+  "homepage": "https://github.com/anassraissi/node.js#readme"
 }

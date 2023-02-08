@@ -14,7 +14,7 @@ var server=http.createServer(function(req,res){
     else if(req.url=="/api"){
         res.writeHead(200,{'Content-type':'application/json'});  
         var obj=[{name:'Raissi Anass',age:23},{name:'no one',age:12}];
-        res.end(JSON.stringify(obj));
+        res.end(JSON.stringify(obj));   //serveur does not know obj must converting to json
     }
     else{
         res.writeHead(200,{'Content-type':'text/html'});  
