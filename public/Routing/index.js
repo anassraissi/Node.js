@@ -7,7 +7,7 @@ var server=http.createServer(function(req,res){
         fs.createReadStream(__dirname+'/home.html').pipe(res);
         console.log('yes');   
     }
-    else if(req.url=='/contact'){
+    else if(req.url=='/contacts'){
         res.writeHead(200,{'Content-type':'text/html'});  
         fs.createReadStream(__dirname+'/contact.html').pipe(res); 
     }
