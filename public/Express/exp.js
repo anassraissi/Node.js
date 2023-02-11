@@ -19,6 +19,12 @@ app.get('/path/:name', function(req, res) { // url: /path/test
 app.get('/path/:id', function(req, res) { // url: /path/test
     res.send('here the parametre that you send it in url : '+req.params.id);  
   });
+
+  //send view in route
+  app.get('/test',function(req,res){
+    res.sendFile(__dirname+'/test.html');
+  });
+
 app.listen('3000');  //add port  127.0.0.1:3000
 
 
