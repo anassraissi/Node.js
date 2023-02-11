@@ -10,6 +10,15 @@ app.get('/',function(req,res){   // http method get,post,delete,put
 app.get('/api',function(req,res){  
     res.send('this api page');
 });
+// route with parametre
+ //param string
+app.get('/path/:name', function(req, res) { // url: /path/test
+    res.send('here the parametre that you send it in url : '+req.params.name);  
+  });
+  // param number
+app.get('/path/:id', function(req, res) { // url: /path/test
+    res.send('here the parametre that you send it in url : '+req.params.id);  
+  });
 app.listen('3000');  //add port  127.0.0.1:3000
 
 
