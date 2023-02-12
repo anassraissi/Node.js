@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 // send reel data and parametre to profile  
 app.get('/profile/:name',function(req,res){  
     
-    var data ={ age: 29, job: 'nothing intresting'};
+    var data ={ age: 29, job: 'nothing intresting',hobbies:['Soccer','Swiming','Tenis']};
         res.render('profile',{get_param:req.params.name,data:data});
 });
 
