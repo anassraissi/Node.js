@@ -26,8 +26,9 @@ app.get('/',function(req,res){
         res.render('index');
 });
 app.get('/contact',function(req,res){  
-    
-        res.render('Conatct');
+        console.log(req.query);
+
+        res.render('Conatct',{query:req.query});
 });
 app.get('/profile',function(req,res){  
     
