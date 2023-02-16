@@ -14,10 +14,21 @@
         <div style="text-align: center;">
             <h1> Conatct page </h1>
             <h2> Call 0633110420 for more walo</h2>
+
             <h3> name : <%= query.name%> </h3>
             <h3> job : <%= query.job%> </h3>
         </div>
         <!--   url http://localhost:3000/contact?name=anass&job=nothing%20serieus -->
-    
+
+        <form action="/contact" method="POST">
+        <label for="who"> who do you want to contact ?</label><br>
+        <input type="text" name="who" id="who" value="<%= query.name %>"><br>
+        <label for="which"> which departement ?</label><br>
+        <input type="text" name="which" id="which"><br>
+        <label for="email"> your email ?</label><br>
+        <input type="text" name="email" id="email"><br>
+        <button type="submit">Submit</button><br>
+        </form>
+
 </body>
 </html>

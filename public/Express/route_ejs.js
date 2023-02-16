@@ -2,6 +2,8 @@ var express=require('express');
 
 var app=express();
 const router = express.Router();
+var bodyParser = require('body-parser')
+var urlencodedParser=bodyParser.urlencoded({extended : false});
 
 app.set('view engine', 'ejs');
 // must add folder that name views 
@@ -25,8 +27,12 @@ app.get('/',function(req,res){
     
         res.render('index');
 });
+app.post('/contact',urlencodedParser,function(req,res){  
+        console.log(req.body);
+
+        res.render('contact_succes',{data:req.body});
+});
 app.get('/contact',function(req,res){  
-        console.log(req.query);
 
         res.render('Conatct',{query:req.query});
 });
